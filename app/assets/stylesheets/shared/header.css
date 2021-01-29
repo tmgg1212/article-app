@@ -1,0 +1,11 @@
+.top-page-heder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kagawa-icon{
+  font-size: 8vh;
+}
+.lists-right{
+  font-size: 15px;
+}

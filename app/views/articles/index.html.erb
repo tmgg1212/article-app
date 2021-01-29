@@ -1,0 +1,17 @@
+<%= render "shared/header" %>
+<div class='main'>
+<%= link_to(new_article_path, class: 'purchase-btn') do %>
+  <span class='purchase-btn-text'>投稿する</span>
+<% end %>
+</div>
+
+
+  <% @articles.each do |article|  %>
+   <li class='list'>
+      <%= link_to articles_path(article.id) do %>
+        <%= image_tag article.image.variant(resize: '500x500'), class: "article-img" %>
+        <%= article.title %>
+<% end %>
+      </li>
+      <% end %>
+<%= render "shared/footer" %>
