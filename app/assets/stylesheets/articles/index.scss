@@ -1,10 +1,30 @@
+.main {
+  background: #333333;
+}
+.article-contents{
+  display: flex;
+  padding: 10vh 0;
+}
 .article-lists{
   display: flex;
+  padding: 10vh 0;
+  text-decoration: none;
+  flex-direction: column;
 }
 .list{
-  justify-content: space-around;
   padding: 1vw;
+
 }
-.list>.article-name{
+.article-image{
+  position: relative;
+}
+.article-img{
+  width: 33vw;
+  height: 33vh;
+}
+.article-name{
   font-weight: bold;
+  font-size: 1.5vw;
+  background-color: aquamarine;
+  width: 33vw;
 }

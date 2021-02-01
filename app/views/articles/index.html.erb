@@ -1,20 +1,25 @@
 <%= render "shared/header" %>
 <div class='main'>
+      <%= link_to(new_article_path, class: 'purchase-btn') do %>
+  <span class='purchase-btn-text'>投稿する</span>
+<% end %>
+  <div class='article-contents'>
+  <ul class='article-lists'>
 
- <ul class='article-lists'>
-
-  <% @articles.each do |article|  %>
-   <li class='list'>
-      <%= link_to articles_path(article.id) do %>
-      <div class='article-image'>
-        <%= image_tag article.image.variant(resize: '400x400'), class: "article-img" %>
-      </div>
-        <h2 class='article-name'>
-        <%= article.title %>
-        </h2>
-      <% end %>
-      </li>
-  <% end %>
+   <% @articles.each do |article|  %>
+    <li class='list'>
+       <%= link_to articles_path(article.id) do %>
+       <div class='article-image'>
+         <%= image_tag article.image.variant(resize: '400x400'), class: "article-img" %>
+       </div>
+         <h2 class='article-name'>
+         <%= article.title %>
+         </h2>
+       <% end %>
+       </li>
+   <% end %>
+  </ul>
+ </div>
 </div>
-</ul>
+
 <%= render "shared/footer" %>
