@@ -1,0 +1,10 @@
+.article-lists{
+  display: flex;
+}
+.list{
+  justify-content: space-around;
+  padding: 1vw;
+}
+.list>.article-name{
+  font-weight: bold;
+}
