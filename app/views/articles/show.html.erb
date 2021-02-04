@@ -1,8 +1,14 @@
 <%= render "shared/header" %>
-    <h2 class="name">
-      <%= @item.name %>
+
+    <%= image_tag @article.image ,class:"item-box-img" %>
+    <h2 class="title">
+      <%= @article.title %>
     </h2>
-    <%= image_tag @item.image ,class:"item-box-img" %>
-    <span class="item-price">
-        <%= @item.price %>
-      </span>
+   <div class="text">
+   <span><%=@article.text%></span>
+   </div>
+      <div class="category">
+   <span><%=@article.category.name%></span>
+   </div>
+
+<%= render "shared/footer" %>

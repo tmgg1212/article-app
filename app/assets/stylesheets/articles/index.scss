@@ -4,22 +4,20 @@
 .article-contents{
   display: flex;
   padding: 10vh 0;
+  flex-direction: column;
 }
 .article-lists{
   display: flex;
   padding: 10vh 0;
   text-decoration: none;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 .list{
   padding: 1vw;
-
-}
-.article-image{
-  position: relative;
+  list-style: none;
 }
 .article-img{
-  width: 33vw;
+  width: 32vw;
   height: 33vh;
 }
 .article-name{
@@ -27,4 +25,5 @@
   font-size: 1.5vw;
   background-color: aquamarine;
   width: 33vw;
+  flex-wrap: wrap;
 }
