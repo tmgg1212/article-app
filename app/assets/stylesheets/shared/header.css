@@ -2,9 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: wheat;
 }
 .kagawa-icon{
-  font-size: 8vh;
+  font-size: 6vh;
+  color: rgb(255, 145, 0);
+  text-decoration: none;
 }
 .lists-right{
   font-size: 15px;

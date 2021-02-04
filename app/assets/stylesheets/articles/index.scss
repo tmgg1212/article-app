@@ -1,5 +1,5 @@
 .main {
-  background: #333333;
+  background: #d3bc9f;
 }
 .article-contents{
   display: flex;
@@ -23,7 +23,8 @@
 .article-name{
   font-weight: bold;
   font-size: 1.5vw;
-  background-color: aquamarine;
+  background-color: rgba(127, 255, 144, 0);
   width: 33vw;
   flex-wrap: wrap;
+  text-decoration: none;
 }

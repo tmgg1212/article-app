@@ -4,11 +4,17 @@
     <h2 class="title">
       <%= @article.title %>
     </h2>
+    <% if current_user == @article.user %>
+    <%= link_to '商品の編集', edit_article_path, method: :get, class: "article-red-btn" %>
+    <p class='or-text'>or</p>
+    <%= link_to '削除', article_path, method: :delete, class:'article-destroy' %>
+    <% end %>
    <div class="text">
    <span><%=@article.text%></span>
    </div>
       <div class="category">
    <span><%=@article.category.name%></span>
    </div>
+   <%=  @article.impressionist_count %>
 
 <%= render "shared/footer" %>

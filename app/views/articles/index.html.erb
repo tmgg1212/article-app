@@ -15,11 +15,16 @@
          <h2 class='article-name'>
          <%= article.title %>
          </h2>
+           <%= article.impressionist_count %>
        <% end %>
+       
        </li>
    <% end %>
   </ul>
  </div>
+ <%= paginate(@articles) %>
+ <% @articles.each do |article|  %>
 </div>
+
 
 <%= render "shared/footer" %>
