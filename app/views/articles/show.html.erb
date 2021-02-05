@@ -1,5 +1,5 @@
 <%= render "shared/header" %>
-
+   <div class="main">
     <%= image_tag @article.image ,class:"item-box-img" %>
     <h2 class="title">
       <%= @article.title %>
@@ -16,5 +16,6 @@
    <span><%=@article.category.name%></span>
    </div>
    <%=  @article.impressionist_count %>
+   </div>
 
 <%= render "shared/footer" %>
